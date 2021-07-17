@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #1e1d22;
+}
+
+footer {
+  border-top: 2px solid #ffffff;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  display: none;
+}
