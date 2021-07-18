@@ -46,7 +46,7 @@
             começar!
           </p>
 
-          <form onsubmit="return submitForm()">
+          <form onsubmit="event.preventDefault(); submitForm();">
             <input
               type="text"
               name="nameInput"
