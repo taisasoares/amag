@@ -16,11 +16,16 @@ footer {
   padding: 32px 0;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+
+#maid {
+  color: #777777;
 }
 
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 90%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -29,7 +34,9 @@ footer {
 }
 
 header {
-  padding: 32px 0;
+  /* padding: 32px 0; */
+  padding-top: 32px;
+  padding-bottom: 18px;
   display: flex;
   justify-content: center;
 }
@@ -195,6 +202,10 @@ form {
   font-size: 32px;
 }
 
+.countdownSubtitle {
+  font-weight: 500;
+}
+
 .countdownContainer {
   display: flex;
   flex-direction: column;
@@ -208,4 +219,324 @@ form {
   margin: 0px 24px;
   background: rgba(242, 242, 242, 0.2);
   border-radius: 16px;
+}
+
+#arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+
+  animation: bouncy 2s infinite;
+}
+
+#arrowDown {
+  margin-top: 8px;
+  margin-bottom: 72px;
+}
+
+#arrowText {
+  padding-top: 8px;
+}
+
+@keyframes bouncy {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-16px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
+
+#plans {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+#dozeMeses {
+  font-weight: 700;
+}
+
+#dozeMesesB {
+  color: #1e1d22;
+  font-weight: 700;
+}
+
+#cross {
+  width: 350px;
+  height: 500px;
+  padding-left: 24px;
+  padding-right: 16px;
+
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  filter: drop-shadow(2px 6px 12px rgba(20, 18, 31, 0.08)),
+    drop-shadow(2px 2px 8px rgba(20, 18, 31, 0.16)),
+    drop-shadow(0px 4px 6px rgba(20, 18, 31, 0.25));
+}
+
+#crossUp {
+  padding-top: 28px;
+  padding-bottom: 91px;
+}
+
+#crossTitle {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#crossDescription {
+  font-size: 16px;
+  color: #777777;
+}
+
+#crossOldPrice {
+  font-size: 32px;
+  text-decoration: line-through;
+  color: #777777;
+}
+
+#crossNewPrice {
+  font-size: 52px;
+}
+
+.crossArg {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+#crossMiddle {
+  padding-bottom: 42px;
+}
+
+#crossHik {
+  width: 380px;
+  height: 600px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+  box-shadow: 2px 6px 12px rgba(20, 18, 31, 0.08),
+    2px 2px 8px rgba(20, 18, 31, 0.16), 0px 4px 6px rgba(20, 18, 31, 0.25);
+}
+
+#crossHikUp {
+  padding-top: 48px;
+  padding-bottom: 91px;
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+#crossHikTitle {
+  color: #1e1d22;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#crossHikDescription {
+  font-size: 16px;
+  color: #777777;
+}
+
+#crossHikOldPrice {
+  font-size: 32px;
+  text-decoration: line-through;
+  color: #777777;
+}
+
+#crossHikNewPrice {
+  color: #1e1d22;
+  font-size: 52px;
+}
+
+.crossHikArg {
+  color: #1e1d22;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+}
+
+#crossHikMiddle {
+  padding-left: 20px;
+  padding-right: 16px;
+  padding-bottom: 42px;
+}
+
+#crossHikObs {
+  font-size: 12px;
+  color: #777777;
+  padding-left: 20px;
+  padding-right: 16px;
+  padding-top: 30px;
+}
+
+#hik {
+  width: 350px;
+  height: 500px;
+  padding-left: 24px;
+  padding-right: 16px;
+
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+  border-radius: 16px;
+  filter: drop-shadow(2px 6px 12px rgba(20, 18, 31, 0.08)),
+    drop-shadow(2px 2px 8px rgba(20, 18, 31, 0.16)),
+    drop-shadow(0px 4px 6px rgba(20, 18, 31, 0.25));
+}
+
+#hikUp {
+  padding-top: 28px;
+  padding-bottom: 91px;
+}
+
+#hikTitle {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#hikDescription {
+  font-size: 16px;
+  color: #777777;
+}
+
+#hikOldPrice {
+  font-size: 32px;
+  text-decoration: line-through;
+  color: #777777;
+}
+
+#hikNewPrice {
+  font-size: 52px;
+}
+
+.hikArg {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+#hikMiddle {
+  padding-bottom: 42px;
+}
+
+@media (max-width: 1150px) {
+  #hero {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #cta {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  #cta-title,
+  #cta-description {
+    text-align: center;
+  }
+
+  #arrow {
+    margin-top: 32px;
+  }
+
+  #arrowDown {
+    margin-bottom: 32px;
+  }
+
+  #plans {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #crossHik {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #hero {
+    padding: 0 32px;
+  }
+
+  #cta,
+  form,
+  #bfsContainer {
+    width: 100%;
+  }
+
+  #cta-title {
+    font-size: 30px;
+  }
+
+  .input,
+  .button {
+    width: 100%;
+  }
+
+  .poppins {
+    font-size: 72px;
+  }
+
+  #sale {
+    font-size: 90px;
+    top: 65px;
+    left: 160px;
+  }
+
+  #countdown {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .countdownTitle {
+    font-size: 24px;
+  }
+
+  .countdownSubtitle {
+    font-size: 14px;
+  }
+
+  .divider {
+    margin: 0 12px;
+  }
+
+  #cross,
+  #hik,
+  #crossHik {
+    width: 80%;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  #crossUp,
+  #crossHikUp,
+  #hikUp {
+    padding-bottom: 60px;
+  }
+}
+
+#author {
+  margin-left: 5px;
 }

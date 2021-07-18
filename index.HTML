@@ -5,7 +5,7 @@
     <link rel="icon" href="assets/icon.svg" type="xml/svg" />
 
     <meta charset="UTF-8" />
-    <meta name="description" content="Texto descritivo da página web" />
+    <meta name="description" content="A melhor academia de crossfit do Brasil (só que de mentirinha)" />
     <meta name="author" content="Taisa Soares" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -31,13 +31,13 @@
   <body>
     <!--Logo e h1 para SEO-->
     <header role="banner">
-      <img src="assets/logo.svg" alt="Logo" />
+      <img src="assets/logo.svg" alt="Logotipo da AMAG" />
       <h1 id="name">Amag</h1>
     </header>
 
     <main role="main">
       <section role="article" id="hero">
-        <!--Elementos a esquerda da seção hero-->
+        <!--Elementos da esquerda da seção hero-->
         <div id="cta">
           <h2 id="cta-title">A melhor academia de crossfit do Brasil</h2>
 
@@ -65,6 +65,7 @@
 
             <input
               class="button"
+              aria-label="Botão para se cadastrar na lista de espera"
               type="submit"
               name="submitButton"
               value="Entrar na lista"
@@ -72,11 +73,12 @@
           </form>
         </div>
 
+        <!--Elementos da direita da seção hero-->
         <div id="bfsContainer">
           <div id="bfs">
-            <span class="poppins">Black</span>
-            <span class="poppins" id="friday">Friday</span>
-            <span id="sale">sale</span>
+            <span lang="en" class="poppins">Black</span>
+            <span lang="en" class="poppins" id="friday">Friday</span>
+            <span lang="en" id="sale">sale</span>
           </div>
 
           <div id="countdown">
@@ -108,9 +110,97 @@
           </div>
         </div>
       </section>
+
+      <!-- Setinha animada -->
+      <div id="arrow">
+        <span id="arrowText">Veja nossos planos</span>
+        <img src="assets/line.svg" alt="Seta" id="arrowDown" />
+      </div>
+
+      <!--Planos-->
+      <section role="article" id="plans">
+        <div id="cross">
+          <div id="crossUp">
+            <h2 id="crossTitle">Crossfit</h2>
+            <span id="crossDescription">tome controle do seu corpo</span>
+          </div>
+
+          <div id="crossMiddle">
+            <p id="crossOldPrice">R$ 120,00</p>
+            <p id="crossNewPrice">R$ 60,00</p>
+          </div>
+
+          <div id="crossDown">
+            <p class="crossArg">
+              <span id="dozeMeses">12 meses </span>com 50% de desconto na
+              mensalidade
+            </p>
+            <p class="crossArg">
+              Todos os equipamentos e uniformes disponíveis para você
+            </p>
+            <p class="crossArg">Campeonatos e excursões todos os meses</p>
+          </div>
+        </div>
+
+        <div id="crossHik">
+            <div id="crossHikUp">
+              <h2 id="crossHikTitle">Crossfit + Hiking</h2>
+              <span id="crossHikDescription">você no próximo nível!</span>
+            </div>
+
+            <div id="crossHikMiddle">
+              <p id="crossHikOldPrice">R$ 300,00</p>
+              <p id="crossHikNewPrice">R$ 150,00</p>
+            </div>
+
+            <div id="crossHikDown">
+              <p class="crossHikArg">
+                <span id="dozeMesesB">12 meses </span>com 50% de desconto na
+                mensalidade
+              </p>
+              <p class="crossHikArg">
+                Todos os equipamentos e uniformes disponíveis para você
+              </p>
+              <p class="crossHikArg">Campeonatos e excursões todos os meses</p>
+              <p class="crossHikArg">
+                Curso gratuito de Instrutor de Crossfit*
+              </p>
+        </div>
+
+            <div>
+              <p id="crossHikObs">
+                *Curso disponibilizado gratuitamente somente durante a oferta de
+                Black Friday
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="hik">
+            <div id="hikUp">
+              <h2 id="hikTitle">Hiking</h2>
+              <span id="hikDescription">levando você as alturas</span>
+            </div>
+
+            <div id="hikMiddle">
+              <p id="hikOldPrice">R$ 200,00</p>
+              <p id="hikNewPrice">R$ 100,00</p>
+            </div>
+
+            <div id="hikDown">
+              <p class="hikArg">
+                <span id="dozeMeses">12 meses </span>com 50% de desconto na mensalidade
+              </p>
+              <p class="hikArg">
+                Todos os equipamentos e uniformes disponíveis para você
+              </p>
+              <p class="hikArg">Campeonatos e excursões todos os meses</p>
+            </div>
+        </div>
+      </section>
     </main>
 
-    <footer role="contentinfo">feito com ❤️ por Taisa Soares</footer>
+    <footer role="contentinfo"><span id="maid">feito com ❤️ por</span><a href="https://github.com/TaisaSoares" target="_blank" id="author">Taisa Soares</a></footer>
     <script type="text/javascript" src="script.JS"></script>
   </body>
 </html>
