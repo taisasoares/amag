@@ -10,15 +10,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="style.CSS" />
+
+    <!--Fontes utilizadas-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <!--Logo e h1 para SEO-->
     <header role="banner">
       <img src="assets/logo.svg" alt="Logo" />
       <h1 id="name">Amag</h1>
@@ -26,6 +37,7 @@
 
     <main role="main">
       <section role="article" id="hero">
+        <!--Elementos a esquerda da seção hero-->
         <div id="cta">
           <h2 id="cta-title">A melhor academia de crossfit do Brasil</h2>
 
@@ -34,7 +46,7 @@
             começar!
           </p>
 
-          <form action="#" method="POST">
+          <form onsubmit="return submitForm()">
             <input
               type="text"
               name="nameInput"
@@ -51,17 +63,25 @@
               class="input"
             />
 
-            <input type="submit" class="button" value="Entrar na lista" />
+            <input
+              class="button"
+              type="submit"
+              name="submitButton"
+              value="Entrar na lista"
+            />
           </form>
         </div>
 
         <!--SVG provisório :)-->
         <div id="bfs">
-          <img src="assets/bfs.svg" alt="Black Friday Sale" />
+          <span class="poppins">Black</span>
+          <span class="poppins" id="friday">Friday</span>
+          <span id="sale">sale</span>
         </div>
       </section>
     </main>
 
     <footer role="contentinfo">feito com ❤️ por Taisa Soares</footer>
+    <script type="text/javascript" src="script.JS"></script>
   </body>
 </html>
